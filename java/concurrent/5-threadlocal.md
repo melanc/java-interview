@@ -4,6 +4,8 @@
 
 每个线程中都保有一个`ThreadLocalMap`的成员变量，`ThreadLocalMap `内部采用`WeakReference`数组保存，数组的key即为`ThreadLocal `内部的Hash值。
 
+![image](images/b737948133fc0e924cb4981d2132d520.png)
+
 ## 内存泄漏
 
 `ThreadLocalMap` 使用 `ThreadLocal` 的弱引用作为 key ，如果一个 `ThreadLocal` 没有外部强引用来引用它，那么系统 GC 的时候，这个 `ThreadLocal` 势必会被回收，这样一来，`ThreadLocalMap` 中就会出现 `key` 为 `null` 的 `Entry` ，就没有办法访问这些 `key` 为 `null` 的 `Entry` 的 `value`，如果当前线程再迟迟不结束的话，这些 `key` 为 `null` 的 `Entry` 的 `value` 就会一直存在一条强引用链：`Thread Ref -> Thread -> ThreaLocalMap -> Entry -> value` 永远无法回收，造成内存泄漏。
