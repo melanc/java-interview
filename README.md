@@ -1,7 +1,6 @@
 # Summary
 
  - [算法](./basic/1-algo/README.md)
-    - [基本算法](./basic/1-algo/1-algo.md)
     - [树](./basic/1-algo/1-tree.md)
     - [Hash](./basic/1-algo/2-hash.md)
     - [最小生成树算法](./basic/1-algo/3-mst.md)
@@ -88,5 +87,5 @@
     - [消息队列](./architecture/distributed/5-mq.md)
     - [Zookeeper](./architecture/distributed/6-zk.md)
     - [Kafka](./architecture/distributed/7-kafka.md)
-    - [远程调用](./architecture/distributed/8-rpc.md)
+    - [RPC](./architecture/distributed/8-rpc.md)
     - [Dubbo](./architecture/distributed/9-dubbo.md)
