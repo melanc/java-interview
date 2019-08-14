@@ -39,7 +39,6 @@
     - [Redis](./basic/4-database/7-redis.md)
     - [Innodb](./basic/4-database/8-innodb.md)
     - [面试题](./basic/4-database/10-questions.md)
-  - [密码学](./basic/cryptology.md)
 - [Java](./java/README.md)
   - [OOP](./java/1-oop.md)
   - [序列化](./java/10-serilaser.md)
@@ -88,3 +87,5 @@
     - [Zookeeper](./architecture/distributed/6-zk.md)
     - [Kafka](./architecture/distributed/7-kafka.md)
     - [Dubbo](./architecture/distributed/9-dubbo.md)
+- [其他](./other/README.md)
+   - [密码学](./other/cryptology.md)
