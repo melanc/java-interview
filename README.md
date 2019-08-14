@@ -87,5 +87,4 @@
     - [消息队列](./architecture/distributed/5-mq.md)
     - [Zookeeper](./architecture/distributed/6-zk.md)
     - [Kafka](./architecture/distributed/7-kafka.md)
-    - [RPC](./architecture/distributed/8-rpc.md)
     - [Dubbo](./architecture/distributed/9-dubbo.md)
